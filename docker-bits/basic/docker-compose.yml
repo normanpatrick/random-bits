@@ -1,0 +1,5 @@
+version: '2'
+services:
+  minimal:
+    image: basic
+    command: [/bin/echo, 'Hello world']
