@@ -29,3 +29,14 @@ docker build -t py3image .
 docker run --rm -it py3image bash
 ```
 
+### Pytorch env (CPU)
+
+```
+cd docker-bits/pytorch-cpu
+
+# build
+docker build -t pytorch_cpu .
+
+# run bash
+docker run --rm -it pytorch_cpu bash
+```
