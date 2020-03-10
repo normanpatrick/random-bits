@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  service1:
+    build: './service1'
+    ports:
+    # HOST:CONTAINER
+    - "5000:5000"
+    volumes:
+    - .:/mycode
+    # command: ["/bin/echo", "hello from service1"]
+    command: ["/bin/echo", "hello from service1"]
+
+  service2:
+    build: './service2'
+    ports:
+    # HOST:CONTAINER
+    - "5001:5001"
+    command: ["/bin/echo", "hello from service2"]
